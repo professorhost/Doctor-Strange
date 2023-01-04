@@ -48,13 +48,13 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/d8b82d0a1d20da5f0cf65.jpg https://telegra.ph/file/ac56302ae11da42519c1d.jpg https://telegra.ph/file/43c7e4d3c2e327bd9b02e.jpg https://telegra.ph/file/77283bdd7509ba368a43f.jpg https://telegra.ph/file/1157e9c4f1ab715996334.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/0e90c3010d11757e79794.jpg')).split()
 NOR_IMG = environ.get('NOR_IMG', "https://telegra.ph/file/329bd4dae3fb88fa8aa30.jpg")
 SPELL_IMG = environ.get('SPELL_IMG',"https://telegra.ph/file/b66f3a65ce68e11e621cf.jpg")
 
 # Welcome area
-MELCOW_IMG = environ.get('MELCOW_IMG',"https://telegra.ph/file/f75dc5a5f440e2ffe43e7.jpg")
-MELCOW_VID = environ.get('MELCOW_VID',"https://telegra.ph/file/ede38b7090806dbbbde4c.mp4")
+MELCOW_IMG = environ.get('MELCOW_IMG',"https://telegra.ph/file/0e90c3010d11757e79794.jpg")
+MELCOW_VID = environ.get('MELCOW_VID',"https://telegra.ph/file/0e90c3010d11757e79794.jpg")
 
 
 
@@ -76,7 +76,7 @@ COMMAND_HAND_LER = environ.get("COMMAND_HAND_LER", "/")
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "doctorstrange")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
 
@@ -87,13 +87,13 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "7"))
-S_GROUP = environ.get('S_GROUP',"https://t.me/czdbotz_support")
-MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/czdbotz")
-FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/+BVP4yf8HHEFmNmJl")
-MSG_ALRT = environ.get('MSG_ALRT', '𝑇ℎ𝑎𝑛𝑘𝑠 𝑇𝑜 𝐶𝑟𝑎𝑧𝑦 𝐷𝑒𝑣𝑒𝑙𝑜𝑝𝑒𝑟 💖')
+S_GROUP = environ.get('S_GROUP',"https://t.me/MSMchat")
+MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/MSM_Updates")
+FILE_FORWARD = environ.get('FILE_FORWARD',"https://t.me/MSM_OTT")
+MSG_ALRT = environ.get('MSG_ALRT', '😈 𝑷𝒓𝒊𝒗𝒂𝒄𝒚 𝑰𝒔 𝑪𝒓𝒊𝒎𝒆 😈')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'czdbotz_support')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MSMchat')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
@@ -106,7 +106,7 @@ SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
-MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
+MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
